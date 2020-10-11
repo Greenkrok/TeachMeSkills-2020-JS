@@ -1,41 +1,41 @@
-let a = +(prompt("Введите год 1936-1947"));
+let year = +(prompt("Введите год"));
 
-switch (a) {
-    case 1936:
-        alert ("Крыса");
+switch (year % 12) {
+    case 0:
+        alert ("Обезяна");
         break;
-    case 1937:
-        alert ("Бык");
-        break;
-    case 1938:
-        alert ("Тигр");
-        break;
-    case 1939:
-        alert ("Кот");
-        break;
-    case 1940:
-        alert ("Дракон");
-        break;
-    case 1941:
-        alert ("Змея");
-        break;
-    case 1942:
-        alert ("Лошадь");
-        break;
-    case 1943:
-        alert ("Коза");
-        break;
-    case 1944:
-        alert ("Обезьяна");
-        break;
-    case 1945:
+    case 1:
         alert ("Петух");
         break;
-    case 1946:
+    case 2:
         alert ("Собака");
         break;
-    case 1947:
-        alert ("Кобан");
+    case 3:
+        alert ("Свинья");
+        break;
+    case 4:
+        alert ("Крыса");
+        break;
+    case 5:
+        alert ("Бык");
+        break;
+    case 6:
+        alert ("Тигр");
+        break;
+    case 7:
+        alert ("Кролик");
+        break;
+    case 8:
+        alert ("Дракон");
+        break;
+    case 9:
+        alert ("Змея");
+        break;
+    case 10:
+        alert ("Лошадь");
+        break;
+    case 11:
+        alert ("Коза");
         break;
     default:
         alert ("Недопустимый формат");
