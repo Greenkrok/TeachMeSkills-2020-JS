@@ -1,2 +1,0 @@
-# ilyaZharkevich-js
-js basicks
