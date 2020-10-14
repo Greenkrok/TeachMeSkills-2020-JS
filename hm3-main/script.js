@@ -58,11 +58,17 @@
 // }
 
 // TASK-8
-let a = +process.argv[2];
-let b = Math.floor(a / 10 % 10);
-if (a<100 || a>999) {
-    console.log('Нужно ввести трехзначное число')
-}
-else {
-    console.log(b)
-}
+// let a = +process.argv[2];
+// let b = Math.floor(a / 10 % 10);
+// if (a<100 || a>999) {
+//     console.log('Нужно ввести трехзначное число')
+// }
+// else {
+//     console.log(b)
+// }
+
+// TASK-9
+const salary = 250;
+let sales = +process.argv[2] * 0.1;
+let sum = salary + sales;
+console.log(sum)
