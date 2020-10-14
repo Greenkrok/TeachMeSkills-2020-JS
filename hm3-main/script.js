@@ -42,18 +42,27 @@
 // console.log(x);
 
 // TASK-7
+// const MINUTES_IN_DAY = 24 * 60;
+// let hours = +process.argv[2];
+// let minutes = +process.argv[3];
 
-const MINUTES_IN_DAY = 24 * 60;
-let hours = +process.argv[2];
-let minutes = +process.argv[3];
+// let minutesSum = hours * 60 + minutes;
+// let minutesDiff = MINUTES_IN_DAY - minutesSum;
 
-let minutesSum = hours * 60 + minutes;
-let minutesDiff = MINUTES_IN_DAY - minutesSum;
+// if (hours>24 || hours < 0 || minutes > 60 || minutes < 0) {
+//     console.log('неправильное время');
+// }
 
-if (hours>24 || hours < 0 || minutes > 60 || minutes < 0) {
-    console.log('неправильное время');
+// else {
+//     console.log(`hours ${Math.floor(minutesDiff / 60)} min ${minutesDiff % 60}`);
+// }
+
+// TASK-8
+let a = +process.argv[2];
+let b = Math.floor(a / 10 % 10);
+if (a<100 || a>999) {
+    console.log('Нужно ввести трехзначное число')
 }
-
 else {
-    console.log(`hours ${Math.floor(minutesDiff / 60)} min ${minutesDiff % 60}`);
+    console.log(b)
 }
