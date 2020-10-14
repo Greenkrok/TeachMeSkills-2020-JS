@@ -21,14 +21,22 @@
 // alert(a + 'км' + ' = ' + c + 'миль');
 
 // TASK-5
-let a = +prompt('Введите первое число');
-let b = +prompt('Введите второе число');
-let c = a + b;
-let d = a - b;
-let e = a * b;
-let f = a / b;
+// let a = +prompt('Введите первое число');
+// let b = +prompt('Введите второе число');
+// let c = a + b;
+// let d = a - b;
+// let e = a * b;
+// let f = a / b;
 
-alert(a + ' + ' + b + ' = ' + c + '\n' +
-    a + ' - ' + b + ' = ' + d + '\n' + 
-    a + ' * ' + b + ' = ' + e + '\n' +
-    a + ' / ' + b + ' = ' + f);
+// alert(a + ' + ' + b + ' = ' + c + '\n' +
+//     a + ' - ' + b + ' = ' + d + '\n' + 
+//     a + ' * ' + b + ' = ' + e + '\n' +
+//     a + ' / ' + b + ' = ' + f);
+
+// TASK-6
+// a * x + b = 0
+
+let a = process.argv[2];
+let b = process.argv[3];
+let x = -b / a;
+console.log(x);
