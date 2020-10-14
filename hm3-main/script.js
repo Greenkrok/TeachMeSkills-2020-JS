@@ -36,7 +36,24 @@
 // TASK-6
 // a * x + b = 0
 
-let a = process.argv[2];
-let b = process.argv[3];
-let x = -b / a;
-console.log(x);
+// let a = +process.argv[2];
+// let b = +process.argv[3];
+// let x = -b / a;
+// console.log(x);
+
+// TASK-7
+
+const MINUTES_IN_DAY = 24 * 60;
+let hours = +process.argv[2];
+let minutes = +process.argv[3];
+
+let minutesSum = hours * 60 + minutes;
+let minutesDiff = MINUTES_IN_DAY - minutesSum;
+
+if (hours>24 || hours < 0 || minutes > 60 || minutes < 0) {
+    console.log('неправильное время');
+}
+
+else {
+    console.log(`hours ${Math.floor(minutesDiff / 60)} min ${minutesDiff % 60}`);
+}
