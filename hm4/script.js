@@ -106,46 +106,84 @@
 
 
 // TASK-6 (Запросить у пользователя номер месяца и вывести на экран его название)
-let month = +process.argv[2];
+// let month = +process.argv[2];
 
-switch(month) {
-    case 1:
-        console.log('Январь');
-        break;
-    case 2:
-        console.log('Февраль');
-        break;
-    case 3:
-        console.log('Март');
-        break;
-    case 4:
-        console.log('Апрель');
-        break;
-    case 5:
-        console.log('Май');
-        break;
-    case 6:
-        console.log('Июнь');
-        break;
-    case 7:
-        console.log('Июль');
-        break;
-    case 8:
-        console.log('Август');
-        break;
-    case 9:
-        console.log('Сентябрь');
-        break;
-    case 10:
-        console.log('Октябрь');
-        break;
-    case 11:
-        console.log('Ноябрь');
-        break;
-    case 12:
-        console.log('Декабрь');
-        break;
-    default:
-        console.log('Нет такого месяца')
-        break;
+// switch(month) {
+//     case 1:
+//         console.log('Январь');
+//         break;
+//     case 2:
+//         console.log('Февраль');
+//         break;
+//     case 3:
+//         console.log('Март');
+//         break;
+//     case 4:
+//         console.log('Апрель');
+//         break;
+//     case 5:
+//         console.log('Май');
+//         break;
+//     case 6:
+//         console.log('Июнь');
+//         break;
+//     case 7:
+//         console.log('Июль');
+//         break;
+//     case 8:
+//         console.log('Август');
+//         break;
+//     case 9:
+//         console.log('Сентябрь');
+//         break;
+//     case 10:
+//         console.log('Октябрь');
+//         break;
+//     case 11:
+//         console.log('Ноябрь');
+//         break;
+//     case 12:
+//         console.log('Декабрь');
+//         break;
+//     default:
+//         console.log('Нет такого месяца')
+//         break;
+// }
+
+
+
+// TASK-7 (Реализовать калькулятор. Пользователь вводит 2 числа и знак (+ - * /). В зависимости от введенного знака решить пример и вывести результат)
+let a = +(prompt('Введите А'));
+let b = +(prompt('Введите Б'));
+let operator = prompt('Введите опперацию');
+
+if(isNaN(a) || isNaN(b)) {
+    alert('Введены некорректные числа');
+} else if (
+    operator !== '+' &&
+    operator !== '-' &&
+    operator !== '*' &&
+    operator !== '/'
+) {
+    alert('Введен некорректный оператор');
+} else {
+    let result;
+
+    switch(operator) {
+        case '+':
+            result = a + b;
+            break;
+        case '-':
+            result = a - b;
+            break;
+        case '*':
+            result = a * b;
+            break;
+        case '/':
+            if(b == 0)
+            alert('Нельзя делить на 0');
+            result = a / b;
+            break;
+    }
+    alert(`${a} ${operator} ${b} = ${result}`);
 }
