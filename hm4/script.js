@@ -78,28 +78,74 @@
 
 
 
-// TASK-5 (Запросить координаты точки (x, y) и определить номер четверти, в которую попала эта точка. Необходимо учесть случаи попадания точки на оси X или Y или в начало координат.
-// Тут нужен switch)
+// TASK-5 (Запросить координаты точки (x, y) и определить номер четверти, в которую попала эта точка. Необходимо учесть случаи попадания точки на оси X или Y или в начало координат)
 
-let x = process.argv[2];
-let y = process.argv[3];
+// let x = process.argv[2];
+// let y = process.argv[3];
 
-if(x > 0 && y > 0) {
-    console.log('Четверть - 1');
-}
+// if(x > 0 && y > 0) {
+//     console.log('Четверть - 1');
+// }
 
-else if(x < 0 && y > 0) {
-    console.log('Четверть - 2');
-}
+// else if(x < 0 && y > 0) {
+//     console.log('Четверть - 2');
+// }
 
-else if(x < 0 && y < 0) {
-    console.log('Четверть - 3');
-}
+// else if(x < 0 && y < 0) {
+//     console.log('Четверть - 3');
+// }
 
-else if(x > 0 && y < 0) {
-    console.log('Четверть - 4');
-}
+// else if(x > 0 && y < 0) {
+//     console.log('Четверть - 4');
+// }
 
-else {
-    console.log('Невозможно определить четверть')
+// else {
+//     console.log('Невозможно определить четверть')
+// }
+
+
+
+// TASK-6 (Запросить у пользователя номер месяца и вывести на экран его название)
+let month = +process.argv[2];
+
+switch(month) {
+    case 1:
+        console.log('Январь');
+        break;
+    case 2:
+        console.log('Февраль');
+        break;
+    case 3:
+        console.log('Март');
+        break;
+    case 4:
+        console.log('Апрель');
+        break;
+    case 5:
+        console.log('Май');
+        break;
+    case 6:
+        console.log('Июнь');
+        break;
+    case 7:
+        console.log('Июль');
+        break;
+    case 8:
+        console.log('Август');
+        break;
+    case 9:
+        console.log('Сентябрь');
+        break;
+    case 10:
+        console.log('Октябрь');
+        break;
+    case 11:
+        console.log('Ноябрь');
+        break;
+    case 12:
+        console.log('Декабрь');
+        break;
+    default:
+        console.log('Нет такого месяца')
+        break;
 }
