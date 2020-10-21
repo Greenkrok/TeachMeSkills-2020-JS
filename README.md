@@ -1,2 +1,2 @@
-# TeachMeSkills-js
+# TeachMeSkills-JS
 js basicks
