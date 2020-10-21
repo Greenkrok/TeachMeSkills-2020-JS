@@ -1,2 +1,2 @@
-# ilyaZharkevich-js
+# TeachMeSkills-js
 js basicks
